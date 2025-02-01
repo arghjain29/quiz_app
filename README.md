@@ -8,6 +8,11 @@ This project is a Quiz App that fetches data from an API, generates quizzes, and
 - Generates quizzes dynamically
 - Reviews and displays quiz results
 
+![image](https://github.com/user-attachments/assets/9419a990-f64a-4892-9724-5059aa75be0e) ![image](https://github.com/user-attachments/assets/e507a383-58b5-4747-902e-eb626d95bc18)
+
+![image](https://github.com/user-attachments/assets/7dd3cc6c-2345-47da-a4c8-cb0df372a7e1) ![image](https://github.com/user-attachments/assets/601f66ad-6626-46c7-b048-93344d6b6c53)
+
+
 ## Technologies Used
 
 - React
