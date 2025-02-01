@@ -1,8 +1,58 @@
-# React + Vite
+# Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a Quiz App that fetches data from an API, generates quizzes, and reviews the results.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fetches quiz data from an API
+- Generates quizzes dynamically
+- Reviews and displays quiz results
+
+## Technologies Used
+
+- React
+- Vite
+- ShadCN
+
+## Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/quiz_app.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd quiz_app
+    ```
+3. Install dependencies:
+    ```sh
+    npm install
+    ```
+4. ShadCN should be setup
+
+
+## Usage
+
+1. Start the application:
+    ```sh
+    npm run dev
+    ```
+2. Open your browser and navigate to `http://localhost:5173/`
+
+
+## Contributing
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-branch`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature-branch`)
+5. Open a pull request
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For any inquiries, please contact [your-email@example.com](mailto:your-email@example.com).
+
