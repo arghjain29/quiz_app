@@ -9,5 +9,5 @@ export default function QuizStart({ onStart }) {
       <p className="mb-8">Test your knowledge and have fun!</p>
       <Button onClick={onStart}>Start Quiz</Button>
     </div>)
-} 
+}
 

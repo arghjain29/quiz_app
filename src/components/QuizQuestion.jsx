@@ -1,23 +1,18 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
+import { useState } from "react"
+import { Button } from "@/components/ui/button"
+import { Progress } from "@/components/ui/progress"
 
-export default function QuizQuestion({
-  question,
-  onAnswer,
-  currentQuestion,
-  totalQuestions,
-}) {
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
+export default function QuizQuestion({ question, onAnswer, currentQuestion, totalQuestions }) {
+  const [selectedAnswer, setSelectedAnswer] = useState(null)
 
   const handleAnswer = () => {
     if (selectedAnswer !== null) {
-      const isCorrect = question.options[selectedAnswer].is_correct;
-      onAnswer(isCorrect);
-      setSelectedAnswer(null);
+      const isCorrect = question.options[selectedAnswer].is_correct
+      onAnswer(isCorrect, selectedAnswer)
+      setSelectedAnswer(null)
     }
-  };
+  }
 
   return (
     <div>
@@ -36,10 +31,7 @@ export default function QuizQuestion({
       </div>
 
       {/* Progress Bar */}
-      <Progress
-        value={(currentQuestion / totalQuestions) * 100}
-        className="mb-4"
-      />
+      <Progress value={(currentQuestion / totalQuestions) * 100} className="mb-4" />
 
       {/* Question */}
       <h2 className="text-2xl font-semibold mb-4">{question.description}</h2>
@@ -51,9 +43,7 @@ export default function QuizQuestion({
             key={index}
             variant={selectedAnswer === index ? "default" : "outline"}
             className={`w-full text-left justify-start transition-all duration-200 
-        ${selectedAnswer === index
-            ? "bg-blue-600 text-white scale-105"
-            : "hover:bg-gray-100"}`}
+        ${selectedAnswer === index ? "bg-blue-600 text-white scale-105" : "hover:bg-gray-100"}`}
             onClick={() => setSelectedAnswer(index)}
           >
             {answer.description}
@@ -62,11 +52,7 @@ export default function QuizQuestion({
       </div>
 
       {/* Submit Button */}
-      <Button
-        onClick={handleAnswer}
-        disabled={selectedAnswer === null}
-        className="w-full"
-      >
+      <Button onClick={handleAnswer} disabled={selectedAnswer === null} className="w-full">
         Submit Answer
       </Button>
 
@@ -77,5 +63,6 @@ export default function QuizQuestion({
 
       {/* <p>{question.detailed_solution}</p> */}
     </div>
-  );
+  )
 }
+
